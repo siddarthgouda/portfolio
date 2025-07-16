@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddarth Patil | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: #f5f7fa;
+      color: #2c3e50;
+      line-height: 1.6;
+      animation: fadeIn 1s ease-in;
+    }
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c);
+      animation: animateBar 3s linear infinite;
+    }
+    @keyframes animateBar {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    header h1 {
+      font-size: 2.5rem;
+      animation: slideInDown 1s ease-in-out;
+    }
+    header p {
+      margin-top: 10px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    section {
+      padding: 30px 60px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #1e3c72;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      margin: 10px 0 20px 20px;
+    }
+    .project {
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes slideInDown {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Siddarth Patil</h1>
+    <p>Computer Science Undergraduate</p>
+    <p><i class="fas fa-envelope"></i> siddarthgoudapatil10@gmail.com | <i class="fas fa-phone"></i> +91 7411736360</p>
+    <p><a href="https://github.com/siddarthgouda" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am a passionate Computer Science student, dedicated to learning and applying emerging technologies to solve real-world problems with a strong foundation in development and teamwork.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>C, C++</li>
+      <li>HTML, CSS, React.js</li>
+      <li>Object-Oriented Programming</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Farm to Table: Online Farmers Market</h3>
+      <p>A full-stack app using React.js, Node.js, and MongoDB that connects farmers and consumers directly, ensuring secure and efficient transactions.</p>
+    </div>
+    <div class="project">
+      <h3>Physiological Signals Stress Detection</h3>
+      <p>Used ML models like SVM and Random Forest in Python to predict stress based on biometric data.</p>
+    </div>
+    <div class="project">
+      <h3>KLE Question Bank</h3>
+      <p>A web platform built with HTML, CSS, and MySQL to allow students to access past exam papers.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>KLE Technological University</strong> (2021–2025) – CGPA: 6.5</li>
+      <li><strong>Jambagi PU College</strong> (2019–2021) – 75%</li>
+      <li><strong>Rainbow Residential Public School</strong> (2018–2019) – 83%</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Languages & Soft Skills</h2>
+    <ul>
+      <li>English, Kannada, Hindi</li>
+      <li>Teamwork, Communication, Leadership, Creativity</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Siddarth Patil. All rights reserved.</p>
+  </footer>
+</body>
+</html>
